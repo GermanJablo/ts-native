@@ -12,8 +12,7 @@ yarn global add ts-native
 
 1. Create a ts-native.json file in the root of your project
 
-ts-native.json is the same as package.json except without the following keys:
+ts-native.json is the same as package.json except with the following differences:
 
-- main
-
-
+- The "main" field does not exist
+- type is "module" by default

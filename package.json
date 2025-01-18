@@ -6,6 +6,7 @@
   "repository": {
     "url": "https://github.com/GermanJablo/ts-native"
   },
+  "type": "module",
   "scripts": {
     "test": "vitest --typecheck"
   },
