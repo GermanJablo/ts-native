@@ -1,47 +1,19 @@
-## Configuring the Global Bin Directory for PNPM
+# Installation (Global)
 
-If `pnpm` cannot find the global bin directory and you encounter the error:
-
-> ERR_PNPM_NO_GLOBAL_BIN_DIR  Unable to find the global bin directory
-
-Follow these steps to manually configure the global bin directory:
-
-### 1. Choose a Directory for Global Executables
-We recommend using `~/.local/bin` (standard for Unix-like systems), but you can choose any directory you prefer.
-
-### 2. Set the Global Bin Directory in PNPM
-Run the following command to configure the global bin directory:
+Install ts-repo globally
 
 ```bash
-pnpm config set global-bin-dir ~/.local/bin
+npm install -g ts-repo 
+pnpm install -g ts-repo
+yarn global add ts-repo
 ```
 
-### 3. Add the Directory to Your PATH
-Edit your shell configuration file (~/.zshrc, ~/.bashrc, or similar) and add the following line:
+# Usage
 
-```bash
-export PATH="$HOME/.local/bin:$PATH"
-```
+1. Create a ts-repo.json file in the root of your project
 
-After editing, reload your shell configuration:
+ts-repo.json is the same as package.json except without the following keys:
 
-```bash
-source ~/.zshrc  # Replace with ~/.bashrc if using Bash
-````
+- main
 
-### 4. Verify the Global Bin Directory
-
-```bash
-pnpm config get global-bin-dir
-```
-
-It should output the directory you set, e.g., ~/.local/bin.
-
-### 5. Link your package globally
-
-```bash
-pnpm link -g
-```
-
-Now, any executables defined in your package's bin field will be globally available.
 

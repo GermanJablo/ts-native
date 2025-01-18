@@ -1,18 +1,18 @@
 {
-  "name": "ts-native",
+  "name": "ts-repo",
   "version": "0.0.0",
   "description": "Combine TypeScript, Eslint, Prettier, and package.json into a single configuration file.",
   "main": "index.js",
   "repository": {
-    "url": "https://github.com/GermanJablo/ts-native"
+    "url": "https://github.com/GermanJablo/ts-repo"
   },
   "scripts": {
     "test": "vitest --typecheck"
   },
   "bin": {
-    "check": "./bin/check",
-    "fix": "./bin/fix",
-    "build": "./bin/build"
+    "check": "./bin/check.ts",
+    "fix": "./bin/fix.ts",
+    "build": "./bin/build.ts"
   },
   "keywords": [
     "typescript",
