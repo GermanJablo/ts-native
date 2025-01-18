@@ -1,18 +1,18 @@
 # Installation (Global)
 
-Install ts-repo globally
+Install ts-native globally
 
 ```bash
-npm install -g ts-repo 
-pnpm install -g ts-repo
-yarn global add ts-repo
+npm install -g ts-native 
+pnpm install -g ts-native
+yarn global add ts-native
 ```
 
 # Usage
 
-1. Create a ts-repo.json file in the root of your project
+1. Create a ts-native.json file in the root of your project
 
-ts-repo.json is the same as package.json except without the following keys:
+ts-native.json is the same as package.json except without the following keys:
 
 - main
 
