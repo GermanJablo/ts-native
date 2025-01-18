@@ -7,7 +7,7 @@
     "url": "https://github.com/GermanJablo/ts-native"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest --typecheck"
   },
   "bin": {
     "check": "./bin/check",
@@ -20,5 +20,13 @@
     "prettier"
   ],
   "author": "Germán Jabloñski",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.2"
+  }
 }
