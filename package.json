@@ -1,0 +1,24 @@
+{
+  "name": "ts-native",
+  "version": "0.0.0",
+  "description": "Combine TypeScript, Eslint, Prettier, and package.json into a single configuration file.",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/GermanJablo/ts-native"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "check": "./bin/check",
+    "fix": "./bin/fix",
+    "build": "./bin/build"
+  },
+  "keywords": [
+    "typescript",
+    "eslint",
+    "prettier"
+  ],
+  "author": "Germán Jabloñski",
+  "license": "MIT"
+}
